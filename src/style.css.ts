@@ -13,15 +13,17 @@ const container = style({
   padding: '1rem',
   flexDirection: 'column',
   gap: '1rem',
+  width: '100%',
 });
 
 const box = style({
   display: 'flex',
-  padding: '1rem',
+  padding: '20px 16px',
   flexDirection: 'column',
-  gap: '1rem',
+  gap: '12px',
   borderRadius: '1rem',
-  backgroundColor: '#F3F4F5',
+  backgroundColor: '#F2F3F5',
+  margin: '1rem 0',
 });
 
 const row = style({
@@ -30,16 +32,36 @@ const row = style({
   justifyContent: 'space-between',
 });
 
-const switchItem = style({});
+const img = style({ margin: '0 auto', maxWidth: '343px' });
 
-globalStyle(`${switchItem} > span > span:first-child`, {
-  fontWeight: 500,
+export const stepStyle = style({});
+
+globalStyle(`${stepStyle} > div > div > div:first-child`, {
+  backgroundColor: 'var(--color-light-neutral-translucent-1300)',
+  color: 'var(--color-light-text-primary-inverted)',
 });
 
+export const btmContent = style({
+  padding: 0,
+});
+const swSlide = style({
+  width: 'min-content',
+});
+
+const btmRowCalc = style({
+  display: 'flex',
+  alignItems: 'center',
+  gap: '1rem',
+  justifyContent: 'space-between',
+});
 export const appSt = {
   bottomBtn,
   container,
   box,
   row,
-  switchItem,
+  img,
+  stepStyle,
+  btmContent,
+  swSlide,
+  btmRowCalc,
 };

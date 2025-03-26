@@ -37,3 +37,30 @@ export const sendDataToGA = async (payload: Payload) => {
     console.error('Error!', error);
   }
 };
+
+type CalcPayload = {
+  calc: string;
+};
+
+export const sendDataToGACalc = async (payload: CalcPayload) => {
+  try {
+    const now = new Date();
+    const date = `${now.getFullYear()}-${
+      now.getMonth() + 1
+    }-${now.getDate()} ${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`;
+
+    await fetch(
+      'https://script.google.com/macros/s/AKfycbwt9MSkE3EyOQRX2WCBMDsTYsD0EjwMmo3EqLkiO-dxh8Ci_X5ZTJ8MvW0jVBAcDoceLw/exec',
+      {
+        redirect: 'follow',
+        method: 'POST',
+        body: JSON.stringify({ date, ...payload, id: LS.getItem(LSKeys.UserId, 0) }),
+        headers: {
+          'Content-Type': 'text/plain;charset=utf-8',
+        },
+      },
+    );
+  } catch (error) {
+    console.error('Error!', error);
+  }
+};
