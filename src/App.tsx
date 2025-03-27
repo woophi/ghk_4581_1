@@ -84,7 +84,7 @@ export const App = () => {
   }>({
     firstDeposit: 72_000,
     incomeValue: 80_000,
-    monthlyDeposit: 6_000,
+    monthlyDeposit: 2_000,
     taxInvest: false,
   });
   const [openBs, setOpenBs] = useState(false);
