@@ -111,8 +111,7 @@ export const App = () => {
     window.gtag('event', '4581_confirm_var1');
     setLoading(true);
 
-    // LS.setItem(LSKeys.ShowThx, true);
-    setThx(true);
+    LS.setItem(LSKeys.ShowThx, true);
     setLoading(false);
     window.location.replace(
       'alfabank://multistep-route?fromModule=FORM&stepNumber=0&alias=invest-long-term-savings-open-alias&prefilledDataID=1001&version=2',
