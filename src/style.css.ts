@@ -32,7 +32,7 @@ const row = style({
   justifyContent: 'space-between',
 });
 
-const img = style({ margin: '0 auto', maxWidth: '343px' });
+const img = style({ margin: '0 auto', maxWidth: '343px', objectFit: 'contain' });
 
 export const stepStyle = style({});
 
