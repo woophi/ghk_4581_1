@@ -75,7 +75,6 @@ function calculateTaxRefund(sumContributions: number, taxRate: number): number {
 export const App = () => {
   const [loading, setLoading] = useState(false);
   const [collapsedItems, setCollapsedItem] = useState<string[]>([]);
-  const [thxShow, setThx] = useState(LS.getItem(LSKeys.ShowThx, false));
   const [calcData, setCalcData] = useState<{
     incomeValue: number;
     firstDeposit: number;
@@ -152,7 +151,7 @@ export const App = () => {
     });
   };
 
-  if (thxShow) {
+  if (LS.getItem(LSKeys.ShowThx, false)) {
     return <ThxLayout />;
   }
 
