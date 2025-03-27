@@ -278,6 +278,19 @@ export const App = () => {
             <Typography.Text tag="p" defaultMargins={false} view="primary-medium">
               Фонд инвестирует деньги и начисляет доход ежегодно
             </Typography.Text>
+            <Typography.Text
+              view="primary-small"
+              color="secondary"
+              onClick={() => {
+                window.location.replace('alfabank://longread?endpoint=v1/adviser/longreads/46688');
+              }}
+              style={{
+                color: '#2A77EF',
+                cursor: 'pointer',
+              }}
+            >
+              Посмотреть доходы за 2024 год
+            </Typography.Text>
           </span>
         </Steps>
 
