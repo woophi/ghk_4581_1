@@ -268,7 +268,7 @@ export const App = () => {
           </span>
           <span>
             <Typography.Text tag="p" defaultMargins={false} view="primary-medium">
-              Государство добавляет до 360 000 ₽ в год и возвращает налоговый вычет до 88 000 ₽
+              Государство добавляет до 36 000 ₽ в год и возвращает налоговый вычет до 88 000 ₽
             </Typography.Text>
             <Typography.Text view="primary-small" color="secondary">
               Гос.поддержку можно получать до 10 лет, а налоговый вычет — минимум 15 лет
