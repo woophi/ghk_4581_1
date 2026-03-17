@@ -157,7 +157,7 @@ export const App = () => {
   return (
     <>
       <div className={appSt.container}>
-        <img src="hb.png" alt="hb" width="100%" height={226} className={appSt.img} />
+        <img src="https://raw.githubusercontent.com/nsdooris/gh_img/main/img1.png" alt="hb" width="100%" height={226} className={appSt.img} />
         <Typography.TitleResponsive tag="h1" view="large" font="system" weight="semibold">
           Программа долгосрочных сбережений
         </Typography.TitleResponsive>
