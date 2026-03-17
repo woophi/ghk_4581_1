@@ -13,7 +13,6 @@ import { ChevronUpMIcon } from '@alfalab/icons-glyph/ChevronUpMIcon';
 import { OutsideMIcon } from '@alfalab/icons-glyph/OutsideMIcon';
 import { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import hb from './assets/hb.png';
 import pers from './assets/pers.png';
 import piec from './assets/piec.png';
 import rubd from './assets/rubd.png';
@@ -158,7 +157,7 @@ export const App = () => {
   return (
     <>
       <div className={appSt.container}>
-        <img src={hb} alt="hb" width="100%" height={226} className={appSt.img} />
+        <img src="/hb.png" alt="hb" width="100%" height={226} className={appSt.img} />
         <Typography.TitleResponsive tag="h1" view="large" font="system" weight="semibold">
           Программа долгосрочных сбережений
         </Typography.TitleResponsive>
